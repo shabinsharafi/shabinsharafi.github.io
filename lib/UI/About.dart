@@ -7,7 +7,7 @@ class About extends StatelessWidget {
       children: [
         Icon(
           Icons.skip_next,
-          color: Color(0xff64FFDA).withOpacity(0.6),
+          color: Color(0xff3382f7).withOpacity(0.6),
           size: 14.0,
         ),
         SizedBox(
@@ -45,7 +45,7 @@ class About extends StatelessWidget {
                     CustomText(
                       text: "01.",
                       textsize: 20.0,
-                      color: Color(0xff61F9D5),
+                      color: Color(0xff3382f7),
                       fontWeight: FontWeight.w700,
                     ),
                     SizedBox(
@@ -77,18 +77,18 @@ class About extends StatelessWidget {
                   children: [
                     CustomText(
                       text:
-                          "Hello! I'm Tushar, a Freelancer based in Nashik, IN.\n\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n\n",
+                          "Hello! I'm Shabin, a Mobile application developer based in Dubai, UAE.\n\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
                     ),
-                    CustomText(
+                    /*CustomText(
                       text:
                           "Shortly currently, I am purshuing my Bachlor's degree in Computter science and Engineering at University of Pune, as well as doing freelancing where I work on a wide variety of interesting and meaningful projects on a daily basis.\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
-                    ),
+                    ),*/
                     CustomText(
                       text:
                           "Here are a few technologies I've been working with recently:\n\n",
@@ -110,10 +110,10 @@ class About extends StatelessWidget {
                         height: size.height * 0.15,
                         child: Column(
                           children: [
-                            technology(context, "Dart"),
                             technology(context, "Flutter"),
+                            technology(context, "Dart"),
                             technology(context, "Firebase"),
-                            technology(context, "UI/UX (Adobe Xd)"),
+                            technology(context, "UI/UX"),
                           ],
                         ),
                       ),
@@ -122,10 +122,10 @@ class About extends StatelessWidget {
                         height: size.height * 0.15,
                         child: Column(
                           children: [
-                            technology(context, "C/C++, Java."),
-                            technology(context, "HTML & (S)CSS"),
-                            technology(context, "MYSQL"),
-                            technology(context, "Git - Github"),
+                            technology(context, "Kotlin, Java"),
+                            technology(context, "Node JS"),
+                            technology(context, "MYSQL, MongoDB"),
+                            technology(context, "Git"),
                           ],
                         ),
                       )
@@ -149,7 +149,7 @@ class About extends StatelessWidget {
                     top: size.height * 0.12,
                     left: size.width * 0.120,
                     child: Card(
-                      color: Color(0xff61F9D5),
+                      color: Color(0xff3382f7),
                       child: Container(
                         margin: EdgeInsets.all(2.75),
                         height: size.height / 2,
@@ -170,14 +170,14 @@ class About extends StatelessWidget {
 }
 
 class CustomImageAnimation extends StatefulWidget {
-  CustomImageAnimation({Key key}) : super(key: key);
+  CustomImageAnimation({Key? key}) : super(key: key);
 
   @override
   _CustomImageAnimationState createState() => _CustomImageAnimationState();
 }
 
 class _CustomImageAnimationState extends State<CustomImageAnimation> {
-  Color customImageColor = Color(0xff61F9D5).withOpacity(0.5);
+  Color customImageColor = Color(0xff3382f7).withOpacity(0.5);
   // ignore: unused_field
   int _enterCounter = 0;
   // ignore: unused_field
@@ -193,7 +193,7 @@ class _CustomImageAnimationState extends State<CustomImageAnimation> {
 
   void _incrementExit(PointerEvent details) {
     setState(() {
-      customImageColor = Color(0xff61F9D5).withOpacity(0.5);
+      customImageColor = Color(0xff3382f7).withOpacity(0.5);
       _exitCounter++;
     });
   }
@@ -221,7 +221,7 @@ class _CustomImageAnimationState extends State<CustomImageAnimation> {
             color: Colors.black54,
             child: Image(
               fit: BoxFit.cover,
-              image: AssetImage("images/pic1.jpeg"),
+              image: AssetImage("images/shabz.png"),
             ),
           ),
           Container(

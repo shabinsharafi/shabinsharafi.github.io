@@ -25,7 +25,7 @@ class _WorkState extends State<Work> {
               CustomText(
                 text: "02.",
                 textsize: 20.0,
-                color: Color(0xff61F9D5),
+                color: Color(0xff3382f7),
                 fontWeight: FontWeight.w700,
               ),
               SizedBox(
@@ -61,7 +61,7 @@ class _WorkState extends State<Work> {
                       children: [
                         Center(
                           child: VerticalDivider(
-                            color: Color(0xff64FFDA),
+                            color: Color(0xff3382f7),
                             thickness: 1.75,
                             width: 10,
                             indent: 10,

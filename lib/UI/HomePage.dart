@@ -18,7 +18,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   Method method = Method();
-  AutoScrollController _autoScrollController;
+  late AutoScrollController _autoScrollController;
   final scrollDirection = Axis.vertical;
 
   bool isExpaned = true;
@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
     _autoScrollController.highlight(index);
   }
 
-  Widget _wrapScrollTag({int index, Widget child}) {
+  Widget _wrapScrollTag({required int index, required Widget child}) {
     return AutoScrollTag(
       key: ValueKey(index),
       controller: _autoScrollController,
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                           icon: Icon(
                             Icons.change_history,
                             size: 32.0,
-                            color: Color(0xff64FFDA),
+                            color: Color(0xff3382f7),
                           ),
                           onPressed: () {}),
                       Spacer(),
@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                         padding: const EdgeInsets.symmetric(vertical: 16.0),
                         child: Card(
                           elevation: 4.0,
-                          color: Color(0xff64FFDA),
+                          color: Color(0xff3382f7),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
@@ -149,8 +149,9 @@ class _HomePageState extends State<HomePage> {
                               color: Color(0xff0A192F),
                               borderRadius: BorderRadius.circular(6.0),
                             ),
-                            child: FlatButton(
-                              hoverColor: Color(0xFF3E0449),
+                            child: TextButton(
+                              style: TextButton.styleFrom(
+                                overlayColor: Color(0xFF3E0449),),
                               onPressed: () {
                                 method.launchURL(
                                     "https://drive.google.com/file/d/1yHLcrN5pCUGIeT8SrwC2L95Lv0MVbJpx/view?usp=sharing");
@@ -162,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                                 child: Text(
                                   "Resume",
                                   style: TextStyle(
-                                    color: Color(0xff64FFDA),
+                                    color: Color(0xff3382f7),
                                   ),
                                 ),
                               ),
@@ -189,21 +190,21 @@ class _HomePageState extends State<HomePage> {
                             color: Color(0xffffA8B2D1),
                             iconSize: 16.0,
                             onPressed: () {
-                              method.launchURL("https://github.com/champ96k");
+                              method.launchURL("https://github.com/shabinsharafi");
                             }),
-                        IconButton(
+                        /*IconButton(
                             icon: FaIcon(FontAwesomeIcons.twitter),
                             color: Color(0xffffA8B2D1),
                             iconSize: 16.0,
                             onPressed: () {
                               method.launchURL("https://twitter.com/champ_96k");
-                            }),
+                            }),*/
                         IconButton(
                           icon: FaIcon(FontAwesomeIcons.linkedin),
                           color: Color(0xffffA8B2D1),
                           onPressed: () {
                             method.launchURL(
-                                "https://www.linkedin.com/in/tushar-nikam-a29a97131/");
+                                "https://www.linkedin.com/in/shabinsharafi/");
                           },
                           iconSize: 16.0,
                         ),
@@ -251,14 +252,14 @@ class _HomePageState extends State<HomePage> {
                                   CustomText(
                                     text: "Hi, my name is",
                                     textsize: 16.0,
-                                    color: Color(0xff41FBDA),
+                                    color: Color(0xff3382f7),
                                     letterSpacing: 3.0,
                                   ),
                                   SizedBox(
                                     height: 6.0,
                                   ),
                                   CustomText(
-                                    text: "Tushar Nikam.",
+                                    text: "Shabin Sha Rafi",
                                     textsize: 68.0,
                                     color: Color(0xffCCD6F6),
                                     fontWeight: FontWeight.w900,
@@ -268,7 +269,7 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   CustomText(
                                     text:
-                                        "I build things for the Android and web.",
+                                        "I build applications for the Mobile and Web.",
                                     textsize: 56.0,
                                     color: Color(0xffCCD6F6).withOpacity(0.6),
                                     fontWeight: FontWeight.w700,
@@ -279,7 +280,7 @@ class _HomePageState extends State<HomePage> {
                                   Wrap(
                                     children: [
                                       Text(
-                                        "I'm a freelancer based in Nashik, IN specializing in \nbuilding (and occasionally designing) exceptional websites, \napplications, and everything in between.",
+                                        "I'm a Mobile application developer, currently in Dubai, IN specializing in \nbuilding (and occasionally designing) exceptional websites, \napplications, and everything in between.",
                                         style: TextStyle(
                                           color: Colors.grey,
                                           fontSize: 16.0,
@@ -299,7 +300,7 @@ class _HomePageState extends State<HomePage> {
                                       method.launchEmail();
                                     },
                                     hoverColor:
-                                        Color(0xff64FFDA).withOpacity(0.2),
+                                        Color(0xff3382f7).withOpacity(0.2),
                                     borderRadius: BorderRadius.circular(4.0),
                                     child: Container(
                                       alignment: Alignment.center,
@@ -307,7 +308,7 @@ class _HomePageState extends State<HomePage> {
                                       width: size.width * 0.14,
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                          color: Color(0xff64FFDA),
+                                          color: Color(0xff3382f7),
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(4.0),
@@ -315,7 +316,7 @@ class _HomePageState extends State<HomePage> {
                                       child: Text(
                                         "Get In Touch",
                                         style: TextStyle(
-                                          color: Color(0xff64FFDA),
+                                          color: Color(0xff3382f7),
                                           letterSpacing: 2.75,
                                           wordSpacing: 1.0,
                                           fontSize: 15.0,
@@ -366,7 +367,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic9.jpg",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/WhatsApp--UI-Clone");
+                                              "https://github.com/shabinsharafi/WhatsApp--UI-Clone");
                                         },
                                         projectDesc:
                                             "A Mobile app for both Android and IOS. View your Status, Chat, and call history. The purpose of this projcet is to Learn Flutter complex UI Design.",
@@ -380,7 +381,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic2.jpg",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Blog-App-using-Firebase");
+                                              "https://github.com/shabinsharafi/Flutter-Blog-App-using-Firebase");
                                         },
                                         projectDesc:
                                             "A blog application using Flutter and firebase, In this project implement Firebase CURD operation, User can add post as well see all the post.",
@@ -394,7 +395,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic3.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Wallpaper-Hub-using-Flutter");
+                                              "https://github.com/shabinsharafi/Wallpaper-Hub-using-Flutter");
                                         },
                                         projectDesc:
                                             "A Wallpaper application Using Pixel API, to show more than 5k+ images. User can Search any images, as well as Download and directly set Image as Wallpaper.",
@@ -408,7 +409,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic4.jpg",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/coronavirus-tracker-app");
+                                              "https://github.com/shabinsharafi/coronavirus-tracker-app");
                                         },
                                         projectDesc:
                                             "A Flutter app to track Coronavirus outbreak, Current statistics of global total confirmed, deaths, recovered cases, Health news, coronavirus safety information and many more.",
@@ -422,7 +423,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic5.jpg",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Gender-Predictor-Flutter-App");
+                                              "https://github.com/shabinsharafi/Gender-Predictor-Flutter-App");
                                         },
                                         projectDesc:
                                             "In this app you can predict the gender with the help of name and probability of that name.",
@@ -436,7 +437,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic6.jpg",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/News-Hours-Apps-Using-Rest-API");
+                                              "https://github.com/shabinsharafi/News-Hours-Apps-Using-Rest-API");
                                         },
                                         projectDesc:
                                             "complete news Application using rest API API link- https://newsapi.org, you can get all news.",
@@ -450,7 +451,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic7.jpg",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-wallpaper-App-using-Firebase");
+                                              "https://github.com/shabinsharafi/Flutter-wallpaper-App-using-Firebase");
                                         },
                                         projectDesc:
                                             "Flutter Wallpaper application using firebase as a backend with a cool animation, it show the all images that are store in firebase firestore.",
@@ -464,7 +465,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic8.jpg",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Weather-Application");
+                                              "https://github.com/shabinsharafi/Flutter-Weather-Application");
                                         },
                                         projectDesc:
                                             "Weather app. This weather app is one of best free weather apps with full features: Local weather, weather map (weather map service) and weather widgets. Widgets for Android: The weather radar widget free and clock widget weather with beautiful style.",
@@ -493,7 +494,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic11.jpg",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Neumorphic-Calculator-UI");
+                                              "https://github.com/shabinsharafi/Flutter-Neumorphic-Calculator-UI");
                                         },
                                         projectDesc:
                                             "To explore the flutter Neumorphic design",
@@ -723,7 +724,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic102.gif",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Web-SolMusic-Landing-Page");
+                                              "https://github.com/shabinsharafi/Flutter-Web-SolMusic-Landing-Page");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -737,7 +738,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic104.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-UI-Kit");
+                                              "https://github.com/shabinsharafi/Flutter-UI-Kit");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -751,7 +752,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic105.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-UI-Kit");
+                                              "https://github.com/shabinsharafi/Flutter-UI-Kit");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -765,7 +766,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic106.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flowers-Shop-Mobile-App-Store");
+                                              "https://github.com/shabinsharafi/Flowers-Shop-Mobile-App-Store");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -779,7 +780,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic107.jfif",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Food-Delivery-App-UI");
+                                              "https://github.com/shabinsharafi/Food-Delivery-App-UI");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -793,7 +794,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic108.jfif",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Plant-Shop-UI-Design");
+                                              "https://github.com/shabinsharafi/Flutter-Plant-Shop-UI-Design");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -807,7 +808,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic109.jfif",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Foody-App-UI-Design");
+                                              "https://github.com/shabinsharafi/Foody-App-UI-Design");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -821,7 +822,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic110.jfif",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Online-Food-Order-App-UI");
+                                              "https://github.com/shabinsharafi/Flutter-Online-Food-Order-App-UI");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -835,7 +836,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic501.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Ganpati-Bappa-");
+                                              "https://github.com/shabinsharafi/Ganpati-Bappa-");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -849,7 +850,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic506.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Netflix-Web-Clone-Using-Flutter");
+                                              "https://github.com/shabinsharafi/Netflix-Web-Clone-Using-Flutter");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -882,7 +883,7 @@ class _HomePageState extends State<HomePage> {
                                           CustomText(
                                             text: "0.4 What's Next?",
                                             textsize: 16.0,
-                                            color: Color(0xff41FBDA),
+                                            color: Color(0xff3382f7),
                                             letterSpacing: 3.0,
                                           ),
                                           SizedBox(
@@ -921,7 +922,7 @@ class _HomePageState extends State<HomePage> {
                                             },
                                             child: Card(
                                               elevation: 4.0,
-                                              color: Color(0xff64FFDA),
+                                              color: Color(0xff3382f7),
                                               shape: RoundedRectangleBorder(
                                                 borderRadius:
                                                     BorderRadius.circular(6.0),
@@ -945,7 +946,7 @@ class _HomePageState extends State<HomePage> {
                                                   child: Text(
                                                     "Say Hello",
                                                     style: TextStyle(
-                                                      color: Color(0xff64FFDA),
+                                                      color: Color(0xff3382f7),
                                                     ),
                                                   ),
                                                 ),
@@ -966,7 +967,7 @@ class _HomePageState extends State<HomePage> {
                                           100,
                                       //color: Colors.white,
                                       child: Text(
-                                        "Designed & Built by Tushar Nikam 💙 Flutter",
+                                        "Designed & Built by Shabin Sha Rafi",
                                         style: TextStyle(
                                           color: Colors.white.withOpacity(0.4),
                                           letterSpacing: 1.75,
@@ -993,7 +994,7 @@ class _HomePageState extends State<HomePage> {
                         RotatedBox(
                           quarterTurns: 45,
                           child: Text(
-                            "tusharnikam2021@gmail.com",
+                            "shabinsharafi@gmail.com",
                             style: TextStyle(
                               color: Colors.grey.withOpacity(0.6),
                               letterSpacing: 3.0,

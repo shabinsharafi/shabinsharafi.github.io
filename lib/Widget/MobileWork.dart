@@ -31,7 +31,7 @@ class _MobileWorkState extends State<MobileWork> {
                       children: [
                         Center(
                           child: VerticalDivider(
-                            color: Color(0xff64FFDA),
+                            color: Color(0xff3382f7),
                             thickness: 1.75,
                             width: 10,
                             indent: 10,

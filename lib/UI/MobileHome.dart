@@ -17,7 +17,7 @@ class _MobileHomeState extends State<MobileHome> {
       children: [
         Icon(
           Icons.skip_next,
-          color: Color(0xff64FFDA).withOpacity(0.6),
+          color: Color(0xff3382f7).withOpacity(0.6),
           size: 14.0,
         ),
         SizedBox(
@@ -48,8 +48,8 @@ class _MobileHomeState extends State<MobileHome> {
                   currentAccountPicture: CircleAvatar(
                     child: Icon(Icons.person),
                   ),
-                  accountName: Text("Tushar Nikam"),
-                  accountEmail: Text("champ96k@gmail.com")),
+                  accountName: Text("Shabin Sha Rafi"),
+                  accountEmail: Text("shabinsharafi@gmail.com")),
               ListTile(
                 title: Text("Share"),
                 leading: Icon(Icons.share),
@@ -70,7 +70,7 @@ class _MobileHomeState extends State<MobileHome> {
           icon: Icon(
             Icons.change_history,
             size: 32.0,
-            color: Color(0xff64FFDA),
+            color: Color(0xff3382f7),
           ),
           onPressed: () {},
         ),
@@ -88,14 +88,14 @@ class _MobileHomeState extends State<MobileHome> {
               CustomText(
                 text: "Hi, my name is",
                 textsize: 16.0,
-                color: Color(0xff41FBDA),
+                color: Color(0xff3382f7),
                 letterSpacing: 3.0,
               ),
               SizedBox(
                 height: size.height * 0.02,
               ),
               CustomText(
-                text: "Tushar Nikam.",
+                text: "Shabin Sha Rafi.",
                 textsize: 52.0,
                 color: Color(0xffCCD6F6),
                 fontWeight: FontWeight.w900,
@@ -135,7 +135,7 @@ class _MobileHomeState extends State<MobileHome> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.0),
                 ),
-                color: Color(0xff64FFDA),
+                color: Color(0xff3382f7),
                 child: Container(
                   alignment: Alignment.center,
                   margin: EdgeInsets.all(0.75),
@@ -153,7 +153,7 @@ class _MobileHomeState extends State<MobileHome> {
                     child: Text(
                       "Get In Touch",
                       style: TextStyle(
-                        color: Color(0xff64FFDA),
+                        color: Color(0xff3382f7),
                         letterSpacing: 2.75,
                         wordSpacing: 1.0,
                         fontSize: 15.0,
@@ -181,7 +181,7 @@ class _MobileHomeState extends State<MobileHome> {
                           CustomText(
                             text: "01.",
                             textsize: 20.0,
-                            color: Color(0xff61F9D5),
+                            color: Color(0xff3382f7),
                             fontWeight: FontWeight.w700,
                           ),
                           SizedBox(
@@ -213,7 +213,7 @@ class _MobileHomeState extends State<MobileHome> {
                         children: [
                           CustomText(
                             text:
-                                "Hello! I'm Tushar, a Freelancer based in Nashik, IN.\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n",
+                                "Hello! I'm Shabin, a Freelancer based in Nashik, IN.\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
@@ -292,7 +292,7 @@ class _MobileHomeState extends State<MobileHome> {
                         right: 20,
                         left: 50.0,
                         child: Card(
-                          color: Color(0xff61F9D5),
+                          color: Color(0xff3382f7),
                           child: Container(
                             margin: EdgeInsets.all(2.75),
                             height: size.height * 0.45,
@@ -312,7 +312,7 @@ class _MobileHomeState extends State<MobileHome> {
                       Container(
                         height: size.height * 0.5,
                         width: size.width * 0.6,
-                        color: Color(0xff61F9D5).withOpacity(0.5),
+                        color: Color(0xff3382f7).withOpacity(0.5),
                       ),
                     ],
                   ),
@@ -326,7 +326,7 @@ class _MobileHomeState extends State<MobileHome> {
                   CustomText(
                     text: "02.",
                     textsize: 20.0,
-                    color: Color(0xff61F9D5),
+                    color: Color(0xff3382f7),
                     fontWeight: FontWeight.w700,
                   ),
                   SizedBox(
@@ -362,7 +362,7 @@ class _MobileHomeState extends State<MobileHome> {
                   CustomText(
                     text: "03.",
                     textsize: 20.0,
-                    color: Color(0xff61F9D5),
+                    color: Color(0xff3382f7),
                     fontWeight: FontWeight.w700,
                   ),
                   SizedBox(
@@ -707,7 +707,7 @@ class _MobileHomeState extends State<MobileHome> {
                       CustomText(
                         text: "0.4 What's Next?",
                         textsize: 16.0,
-                        color: Color(0xff41FBDA),
+                        color: Color(0xff3382f7),
                         letterSpacing: 3.0,
                       ),
                       SizedBox(
@@ -742,7 +742,7 @@ class _MobileHomeState extends State<MobileHome> {
                       ),
                       Card(
                         elevation: 4.0,
-                        color: Color(0xff64FFDA),
+                        color: Color(0xff3382f7),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6.0),
                         ),
@@ -762,7 +762,7 @@ class _MobileHomeState extends State<MobileHome> {
                             child: Text(
                               "Say Hello",
                               style: TextStyle(
-                                color: Color(0xff64FFDA),
+                                color: Color(0xff3382f7),
                               ),
                             ),
                           ),
@@ -787,7 +787,7 @@ class _MobileHomeState extends State<MobileHome> {
                       size: 15.0,
                     ),
                     onPressed: () {
-                      method.launchURL("https://github.com/champ96k");
+                      method.launchURL("https://github.com/shabinsharafi");
                     },
                   ),
                   IconButton(
@@ -798,7 +798,7 @@ class _MobileHomeState extends State<MobileHome> {
                     ),
                     onPressed: () {
                       method.launchURL(
-                          "https://www.linkedin.com/in/tushar-nikam-a29a97131/");
+                          "https://www.linkedin.com/in/shabinsharafi/");
                     },
                   ),
                   IconButton(
@@ -835,7 +835,7 @@ class _MobileHomeState extends State<MobileHome> {
                 width: MediaQuery.of(context).size.width,
                 //color: Colors.white,
                 child: Text(
-                  "Designed & Built by Tushar Nikam 💙 Flutter",
+                  "Designed & Built by Shabin Sha rafi",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.4),

@@ -12,13 +12,13 @@ class FeatureProject extends StatelessWidget {
   final Function ontab;
 
   FeatureProject(
-      {this.imagePath,
-      this.ontab,
-      this.projectDesc,
-      this.projectTitle,
-      this.tech1,
-      this.tech2,
-      this.tech3});
+      {required this.imagePath,
+        required this.ontab,
+        required this.projectDesc,
+        required this.projectTitle,
+        required this.tech1,
+        required this.tech2,
+        required this.tech3});
 
   @override
   Widget build(BuildContext context) {
@@ -153,7 +153,7 @@ class FeatureProject extends StatelessWidget {
                         IconButton(
                           icon: FaIcon(FontAwesomeIcons.github),
                           color: Colors.white.withOpacity(0.3),
-                          onPressed: ontab,
+                          onPressed: () => ontab,
                         ),
                       ],
                     ),
