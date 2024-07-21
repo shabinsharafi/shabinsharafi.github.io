@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-        backgroundColor: Color(0xff0A192F),
+        backgroundColor: Color(0xff020c1c),
         body: SingleChildScrollView(
           physics: ScrollPhysics(),
           primary: true,
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                                 overlayColor: Color(0xFF3E0449),),
                               onPressed: () {
                                 method.launchURL(
-                                    "https://drive.google.com/file/d/1yHLcrN5pCUGIeT8SrwC2L95Lv0MVbJpx/view?usp=sharing");
+                                    "https://docs.google.com/presentation/d/e/2PACX-1vQzCN7v_gtgYRfPwuplNELHIQg0c6sRKCGLwi0QX09dy8r2CAgny--Y3PErjKBj8QtJMaJdN_YD9roM/pub?start=true&loop=true&delayms=5000");
                               },
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
@@ -270,8 +270,8 @@ class _HomePageState extends State<HomePage> {
                                   CustomText(
                                     text:
                                         "I build applications for the Mobile and Web.",
-                                    textsize: 56.0,
-                                    color: Color(0xffCCD6F6).withOpacity(0.6),
+                                    textsize: 45.0,
+                                    color: Color(0xffCCD6F6).withOpacity(0.8),
                                     fontWeight: FontWeight.w700,
                                   ),
                                   SizedBox(
@@ -280,7 +280,14 @@ class _HomePageState extends State<HomePage> {
                                   Wrap(
                                     children: [
                                       Text(
-                                        "I'm a Mobile application developer, currently in Dubai, IN specializing in \nbuilding (and occasionally designing) exceptional websites, \napplications, and everything in between.",
+                                        "I'm a Mobile application developer, currently in Dubai, "+
+                                            "Dedicated and innovative mobile application developer with over 6 years of experience in Android and "
+                                                "Flutter development. Experienced in developing high-quality applications across diverse domains "
+                                                "including e-commerce, finance, healthcare, fantasy gaming, project management tools and Salesforce "
+                                                "integrations. Proficient in using Jetpack Compose for modern UI design and Node.js with LoopBack "
+                                                "for robust back-end solutions. Seeking to leverage my skills in project management, problem-solving, "
+                                                "and user experience optimization to contribute to a forward-thinking organization, "
+                                                "delivering cutting-edge mobile solutions that enhance user experience and drive business growth.",
                                         style: TextStyle(
                                           color: Colors.grey,
                                           fontSize: 16.0,
