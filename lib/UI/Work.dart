@@ -74,11 +74,6 @@ class _WorkState extends State<Work> {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.pink,
-                                child: FaIcon(FontAwesomeIcons.laptopHouse,
-                                    color: Colors.white),
-                              ),
-                              CircleAvatar(
                                 backgroundColor: Colors.red,
                                 child: FaIcon(FontAwesomeIcons.freeCodeCamp,
                                     color: Colors.white),

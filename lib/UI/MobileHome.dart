@@ -104,7 +104,7 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.04,
               ),
               CustomText(
-                text: "I build things for the Android and web.",
+                text: "Building applications for better future.",
                 textsize: 42.0,
                 color: Color(0xffCCD6F6).withOpacity(0.6),
                 fontWeight: FontWeight.w700,
@@ -117,7 +117,7 @@ class _MobileHomeState extends State<MobileHome> {
                 child: Wrap(
                   children: [
                     Text(
-                      "I'm a freelancer based in Nashik, IN specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.",
+                      "Im a mobile app developer with experience in Android and Flutter. Skilled in UI design, cross-platform development, and back-end solutions. Passionate about creating innovative apps across various domains, aiming to lead and transform user experiences",
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 15.0,
@@ -213,7 +213,7 @@ class _MobileHomeState extends State<MobileHome> {
                         children: [
                           CustomText(
                             text:
-                                "Hello! I'm Shabin, a Freelancer based in Nashik, IN.\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n",
+                                "Hello! I'm Shabin, an experienced mobile application developer with 6+ years in Android and Flutter. Skilled in UI design with Jetpack Compose, cross-platform development with Flutter, and robust back-end solutions with Node.js and LoopBack. Passionate about creating innovative apps across diverse domains, aiming to lead a team in transforming user experiences and setting industry standards.",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
@@ -808,7 +808,7 @@ class _MobileHomeState extends State<MobileHome> {
                       size: 15.0,
                     ),
                     onPressed: () {
-                      method.launchURL("https://twitter.com/champ_96k");
+                      method.launchURL("https://twitter.com/shabinsharafi");
                     },
                   ),
                   IconButton(

@@ -15,7 +15,7 @@ class _HomeState extends State<Home> {
         if (constraints.maxWidth >= 1000) {
           return HomePage();
         } else {
-          return MobileHome();
+          return HomePage();
         }
       },
     );

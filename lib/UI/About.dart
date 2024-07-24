@@ -77,7 +77,7 @@ class About extends StatelessWidget {
                   children: [
                     CustomText(
                       text:
-                          "Hello! I'm Shabin, a Mobile application developer based in Dubai, UAE.\n\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n\n",
+                      "Hello! I'm Shabin, an experienced mobile application developer with 6+ years in Android and Flutter. Skilled in UI design with Jetpack Compose, cross-platform development with Flutter, and robust back-end solutions with Node.js and LoopBack. Passionate about creating innovative apps across diverse domains, aiming to lead a team in transforming user experiences and setting industry standards.",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
