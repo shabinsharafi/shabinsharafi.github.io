@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="Shabin's Portfolio" name="description">
+
+    <!-- iOS meta tags & icons -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Shabin Sha Rafi" name="apple-mobile-web-app-title">
+    <link href="icons/Icon-192.png" rel="apple-touch-icon">
+
+    <!-- Favicon -->
+    <link href="favicon.png" rel="shortcut icon" type="image/png"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+
+    <title>Shabin Sha Rafi</title>
+    <link href="manifest.json" rel="manifest">
+    <style>
+        body {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background-color: #01010c;
+        }
+        .loading {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          /*Default Axis is X*/
+          justify-content: center;
+          /*Main Axis*/
+          align-items: center;
+          /*Cross Axis*/
+        }
+
+        .loader {
+          width: 20vw;
+        }
+    </style>
+</head>
+<body>
+<div class="loading">
+    <div class="loader" id="container"></div>
+</div>
+<script async src="flutter_bootstrap.js"></script>
+<script>
+    // Load and play the Lottie animation
+    window.onload = function () {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3045028220');
+      }
+      var lottieContainer = document.getElementById('container');
+      lottie.loadAnimation({
+        container: lottieContainer, // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: './assets/splash_animation2.json' // the path to the animation json
+      });
+
+      // Remove the loading indicator after 10 seconds
+      setTimeout(function () {
+        var loadingIndicator = document.getElementById('loading_indicator');
+        if (loadingIndicator) {
+          loadingIndicator.remove();
+        }
+      }, 200000);
+    }
+</script>
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
